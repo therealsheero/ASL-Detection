@@ -26,16 +26,6 @@ python Collect_Data.py
 - `Q` - Quit
 - Auto-cropping to hand region
 
-data/
-├── A/
-│   ├── image1.png
-│   ├── image2.png
-├── B/
-│   ├── image1.png
-...
-
-
-
 ## 🧠 Model Training
 ```bash
 python train_pth.ipynb 
