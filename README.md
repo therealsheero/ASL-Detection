@@ -10,6 +10,13 @@ git clone https://github.com/therealsheero/ASL-Detection.git
 cd ASL-Detection
 ```
 
+📦 Requirements
+Install the required packages using:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## 📂 Project Structure
 ```
 .
