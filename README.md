@@ -82,7 +82,7 @@ python test.py
 3. Submit a pull request
 
 ## 📧 Contact
-[2004divyanshii@gmail.com](mailto:2004divyanshii@gmail.com)
+[E22CSEU0631@bennett.edu.in](mailto:E22CSEU0631@bennett.edu.in)
 ```
 ▶️ How to Use
 This model can be integrated into a real-time webcam-based ASL interpreter using OpenCV and MediaPipe or cvzone. Load the model, capture hand ROI, preprocess it, and run predictions.
