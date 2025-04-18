@@ -1,96 +1,91 @@
-Here's the complete **README.md** in pure copy-paste format with all emojis and formatting intact:
+# 🤟 ASL Sign Language Detection using MobileNetV2
 
-```markdown
-# 🤟 Real-Time ASL Recognition with Deep Learning
+This project focuses on detecting American Sign Language (ASL) hand gestures using deep learning. It includes data collection with OpenCV and MediaPipe, training a MobileNetV2-based image classification model, and evaluating its performance on a custom dataset of ASL signs (0-9 and A-Z).
 
-![ASL Detection Demo](demo.gif)
-
-## ✨ Features
-- Real-time American Sign Language (A-Z, 0-9) detection
-- 98.3% test accuracy MobileNetV2 model
-- Hand tracking with confidence scores
-- Lighting-robust grayscale processing
+---
 
 ## 🛠️ Installation
 ```bash
-git clone https://github.com/yourusername/asl-recognition.git
-cd asl-recognition
-pip install -r requirements.txt
+git clone https://github.com/therealsheero/ASL-Detection.git
+cd ASL-Detection
 ```
 
 ## 📂 Project Structure
 ```
 .
 ├── data/                  # Dataset (A-Z/0-9 folders)
-├── models/                # Saved models
-├── dataset_collection.py  # Data collection script
-├── train.py               # Model training
-├── predict.py             # Real-time detection
+├── asl_mobilenetv2_best.pth  #Model
+├── Collec_Data.py         # Data collection script
+├── train_pth.ipynb        # Model training
+├── test.py             # Real-time detection
 └── requirements.txt       # Dependencies
 ```
 
 ## 🖐️ Data Collection
 ```bash
-python dataset_collection.py --label A --output_dir data/A
+python Collect_Data.py 
 ```
 **Controls**:
 - `S` - Save frame
 - `Q` - Quit
 - Auto-cropping to hand region
 
+data/
+├── A/
+│   ├── image1.png
+│   ├── image2.png
+├── B/
+│   ├── image1.png
+...
+
+
 ## 🧠 Model Training
 ```bash
-python train.py \
-  --data_dir data \
-  --model mobilenetv2 \
-  --epochs 15 \
-  --output models/best_model.pth
+python train_pth.ipynb 
+  --data_dir data 
+  --model mobilenetv2 
+  --epochs 20 
+  --output asl_mobilenetv2_best.pth
 ```
 
 **Training Results**:
 ```
-Epoch 15/15 | Train Acc: 98.1% | Val Acc: 97.9%
+Epoch 20/20 | Epoch 20: Train Acc: 1.0000, Val Acc: 0.9722
 Test Accuracy: 98.3%
 ```
 
 ## ▶️ Real-Time Detection
 ```bash
-python predict.py --model models/best_model.pth
+python test.py 
 ```
-![Prediction Example](prediction_example.png)
 
 ## 📊 Performance
 | Metric       | Value |
 |--------------|-------|
 | Accuracy     | 98.3% |
-| Inference FPS| 24    |
-| Model Size   | 8.7MB |
 
 ## 🌟 Key Files
-- `dataset_collection.py`: Hand tracking + data saver
-- `train.py`: Model training pipeline
-- `predict.py`: Live webcam detection
+- `Collect_Data.py`: Hand tracking + data saver
+- `train_pth.ipynb`: Model training pipeline
+- `test.py`: Live webcam detection
 
 ## 🤝 Contributing
 1. Fork the repository
 2. Add more ASL samples
 3. Submit a pull request
 
-## 📜 License
-MIT
-
 ## 📧 Contact
-[your.email@example.com](mailto:your.email@example.com)
+[2004divyanshii@gmail.com](mailto:2004divyanshii@gmail.com)
 ```
+▶️ How to Use
+This model can be integrated into a real-time webcam-based ASL interpreter using OpenCV and MediaPipe or cvzone. Load the model, capture hand ROI, preprocess it, and run predictions.
 
-**To use**:
-1. Copy everything above
-2. Paste into a new `README.md` file
-3. Replace placeholders (`yourusername`, `your.email@example.com`)
-4. Add actual demo.gif and prediction_example.png
-5. Commit to your repository
-
-All emojis and formatting will render perfectly on GitHub! 🚀
+🚀 Future Work
+Add real-time ASL detection app
+Build ASL-based games (e.g., ASL crossword)
+Improve dataset diversity
+Deploy on web or mobile using TensorFlow Lite or ONNX
+```
 
 
 
