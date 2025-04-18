@@ -17,17 +17,6 @@ Install the required packages using:
 pip install -r requirements.txt
 ```
 
-## 📂 Project Structure
-```
-.
-├── data/                  # Dataset (A-Z/0-9 folders)
-├── asl_mobilenetv2_best.pth  #Model
-├── Collec_Data.py         # Data collection script
-├── train_pth.ipynb        # Model training
-├── test.py             # Real-time detection
-└── requirements.txt       # Dependencies
-```
-
 ## 🖐️ Data Collection
 ```bash
 python Collect_Data.py 
@@ -44,6 +33,7 @@ data/
 ├── B/
 │   ├── image1.png
 ...
+
 
 
 ## 🧠 Model Training
@@ -75,11 +65,6 @@ python test.py
 - `Collect_Data.py`: Hand tracking + data saver
 - `train_pth.ipynb`: Model training pipeline
 - `test.py`: Live webcam detection
-
-## 🤝 Contributing
-1. Fork the repository
-2. Add more ASL samples
-3. Submit a pull request
 
 ## 📧 Contact
 [E22CSEU0631@bennett.edu.in](mailto:E22CSEU0631@bennett.edu.in)
