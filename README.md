@@ -1,6 +1,8 @@
 # 🤟 ASL Sign Language Detection using MobileNetV2
 
-This project focuses on detecting American Sign Language (ASL) hand gestures using deep learning. It includes data collection with OpenCV and MediaPipe, training a MobileNetV2-based image classification model, and evaluating its performance on a custom dataset of ASL signs (0-9 and A-Z).
+This project focuses on detecting American Sign Language (ASL) hand gestures using deep learning and then further use it to play a game of simple crossword. It includes data collection with OpenCV and MediaPipe, training a MobileNetV2-based image classification model, and evaluating its performance on a custom dataset of ASL signs (0-9 and A-Z). 
+
+By integrating ASL recognition with interactive crossword puzzles, we aim to make language learning more engaging, intuitive, and enjoyable. Such playful learning experiences can contribute significantly to the cognitive and linguistic development of young users.
 
 ---
 
@@ -55,6 +57,7 @@ python test.py
 - `Collect_Data.py`: Hand tracking + data saver
 - `train_pth.ipynb`: Model training pipeline
 - `test.py`: Live webcam detection
+- `app_CSVCross.py`: ASL Crossword Application
 
 ## 📧 Contact
 [E22CSEU0631@bennett.edu.in](mailto:E22CSEU0631@bennett.edu.in)
@@ -64,7 +67,6 @@ This model can be integrated into a real-time webcam-based ASL interpreter using
 
 🚀 Future Work
 Add real-time ASL detection app
-Build ASL-based games (e.g., ASL crossword)
 Improve dataset diversity
 Deploy on web or mobile using TensorFlow Lite or ONNX
 ```
