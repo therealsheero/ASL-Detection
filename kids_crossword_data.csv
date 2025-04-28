@@ -1,0 +1,21 @@
+word,clue,orientation,row,col
+apple,A red or green fruit,across,0,0
+sun,Bright thing in the sky,down,0,2
+cat,A small pet that meows,across,2,0
+dog,Barks and wags tail,down,1,1
+book,You read it,across,3,0
+fish,Lives in water,across,4,1
+milk,White drink from cows,down,0,4
+hat,Wear it on your head,down,0,0
+tree,Grows tall with leaves,across,5,0
+ball,Round toy you throw,across,6,1
+star,Shines at night,down,1,5
+frog,Jumps and says ribbit,across,7,2
+bear,A big animal that growls,down,3,7
+duck,A bird that quacks,across,8,1
+ice,Cold and melts,down,2,9
+shoe,You wear it on your foot,across,9,0
+drum,You hit it to make noise,across,1,6
+fork,You eat with it,down,0,7
+leaf,Falls from a tree,across,5,5
+moon,You see it at night,down,0,9
