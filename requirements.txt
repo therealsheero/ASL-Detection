@@ -1,7 +1,7 @@
 # I am stating my Python versions and library versions 
 
 #Python version
-Python 3.12.3
+#Python 3.12.3
 
 # Core Packages
 torch==2.3.1
